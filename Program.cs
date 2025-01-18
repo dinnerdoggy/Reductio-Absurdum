@@ -46,7 +46,7 @@ while (!exit)
     {
         case "a":
             Console.Clear();
-            Options.ViewProducts();
+            Options.ViewProducts(products);
             break;
 
         case "b":
