@@ -6,6 +6,8 @@ ProductType potions = new ProductType { Name = "Potions", id = 2 };
 ProductType enchanted = new ProductType { Name = "Enchanted Objects", id = 3 };
 ProductType wands = new ProductType { Name = "Wands", id = 4 };
 
+var productTypes = new List<ProductType> { apparel, potions, enchanted, wands };
+
 // Products
 Product product1 = new Product("Orb", 10.00m, true, enchanted);
 Product product2 = new Product("Fire Wand", 5.00m, false, wands);
@@ -46,12 +48,12 @@ while (!exit)
     {
         case "a":
             Console.Clear();
-            Options.ViewProducts(products);
+            Options.ViewProducts(products, productTypes);
             break;
 
         case "b":
             Console.Clear();
-            Options.AddProduct();
+            Options.AddProduct(productTypes, products);
             break;
 
         case "c":
