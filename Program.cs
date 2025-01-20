@@ -21,6 +21,7 @@ bool exit = false;
 
 while (!exit)
 {
+    Console.Clear();
     // Display the menu
     static void DisplayMenu()
     {
@@ -58,7 +59,7 @@ while (!exit)
 
         case "c":
             Console.Clear();
-            Options.DeleteProduct();
+            Options.DeleteProduct(products, productTypes);
             break;
 
         case "d":
@@ -100,5 +101,6 @@ while (!exit)
     {
         Console.WriteLine("\nPress Enter to return to the menu...");
         Console.ReadLine();
+        Console.Clear();
     }
 }
