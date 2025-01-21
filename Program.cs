@@ -64,7 +64,7 @@ while (!exit)
 
         case "d":
             Console.Clear();
-            Options.UpdateDetails();
+            Options.UpdateDetails(products, productTypes);
             break;
 
         case "e":
