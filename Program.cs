@@ -31,12 +31,10 @@ while (!exit)
         Console.WriteLine("b. Add a Product");
         Console.WriteLine("c. Delete a Product");
         Console.WriteLine("d. Update a Product's Details");
-        Console.WriteLine("e. ...");
-        Console.WriteLine("f. ...");
-        Console.WriteLine("g. ...");
-        Console.WriteLine("h. Exit");
+        Console.WriteLine("e. Search by Category");
+        Console.WriteLine("z. Exit");
         Console.WriteLine("===============================");
-        Console.Write("Enter your choice (a-h): ");
+        Console.Write("Enter your choice (a-z): ");
     }
 
     DisplayMenu();
@@ -69,20 +67,10 @@ while (!exit)
 
         case "e":
             Console.Clear();
-            Console.WriteLine("Under construction...");
+            Options.SearchByType(products, productTypes);
             break;
 
-        case "f":
-            Console.Clear();
-            Console.WriteLine("Under construction...");
-            break;
-
-        case "g":
-            Console.Clear();
-            Console.WriteLine("Under construction...");
-            break;
-
-        case "h":
+        case "z":
             Console.Clear();
             Console.WriteLine("So long my friend ♥");
             Console.ReadLine();
