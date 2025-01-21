@@ -9,11 +9,11 @@ ProductType wands = new ProductType { Name = "Wands", id = 4 };
 var productTypes = new List<ProductType> { apparel, potions, enchanted, wands };
 
 // Products
-Product product1 = new Product("Orb", 10.00m, true, enchanted);
-Product product2 = new Product("Fire Wand", 5.00m, false, wands);
-Product product3 = new Product("Blue Robe", 40.00m, true, apparel);
-Product product4 = new Product("Health Pot", 1.00m, false, potions);
-Product product5 = new Product("Straw Mage Hat", 30.00m, true, apparel);
+Product product1 = new Product("Orb", 10.00m, true, enchanted, DateTime.MinValue, 89);
+Product product2 = new Product("Fire Wand", 5.00m, false, wands, DateTime.MaxValue, 99);
+Product product3 = new Product("Blue Robe", 40.00m, true, apparel, DateTime.Now, 69);
+Product product4 = new Product("Health Pot", 1.00m, false, potions, DateTime.MaxValue, 59);
+Product product5 = new Product("Straw Mage Hat", 30.00m, true, apparel, DateTime.MinValue, 39);
 
 var products = new List<Product> { product1, product2, product3, product4, product5 };
 
