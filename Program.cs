@@ -32,6 +32,7 @@ while (!exit)
         Console.WriteLine("c. Delete a Product");
         Console.WriteLine("d. Update a Product's Details");
         Console.WriteLine("e. Search by Category");
+        Console.WriteLine("f. Available");
         Console.WriteLine("z. Exit");
         Console.WriteLine("===============================");
         Console.Write("Enter your choice (a-z): ");
@@ -68,6 +69,10 @@ while (!exit)
         case "e":
             Console.Clear();
             Options.SearchByType(products, productTypes);
+            break;
+        case "f":
+            Console.Clear();
+            Options.ShowAvailable(products);
             break;
 
         case "z":
